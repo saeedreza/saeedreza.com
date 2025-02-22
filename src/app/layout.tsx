@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
@@ -76,6 +77,7 @@ export default function RootLayout({
           <footer className="py-6 px-4 sm:px-6 lg:px-8 text-center text-sm text-stone-600">
             © {new Date().getFullYear()} Saeedreza Abbaspour
           </footer>
+          <Analytics />
         </div>
       </body>
     </html>
