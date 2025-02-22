@@ -8,15 +8,15 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Saeedreza - Product Engineer & Internet Entrepreneur",
-  description: "Welcome to my personal website. I am a Product Engineer & Internet Entrepreneur",
+  title: "Saeedreza > Personal Website",
+  description: "Welcome to my personal website. My name is Saeedreza and I am a Product Engineer & Internet Entrepreneur",
   metadataBase: new URL('https://saeedreza.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: "Saeedreza - Product Engineer & Internet Entrepreneur",
-    description: "Welcome to my personal website. I am a Product Engineer & Internet Entrepreneur",
+    title: "Saeedreza > Personal Website",
+    description: "Welcome to my personal website. My name is Saeedreza and I am a Product Engineer & Internet Entrepreneur",
     url: 'https://saeedreza.com',
     siteName: 'Saeedreza',
     type: 'website',
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@IAmSaeedreza',
-    title: 'Saeedreza - Product Engineer & Internet Entrepreneur',
-    description: 'Welcome to my personal website. I am a Product Engineer & Internet Entrepreneur',
+    title: 'Saeedreza > Personal Website',
+    description: 'Welcome to my personal website. My name is Saeedreza and I am a Product Engineer & Internet Entrepreneur',
     images: ['/img/saeedreza.jpg'],
   },
   icons: {

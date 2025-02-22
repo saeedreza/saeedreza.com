@@ -1,4 +1,9 @@
+import { Metadata } from 'next'
 import Link from 'next/link'
+export const metadata: Metadata = {
+  title: "Saeedreza > Projects",
+  description: "A collection of my projects.",
+};
 
 export default function Projects() {
   return (
