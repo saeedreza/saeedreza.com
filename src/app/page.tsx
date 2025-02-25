@@ -29,7 +29,7 @@ export default function Home() {
         
       <section>
         <h3 className="text-xl font-semibold mb-4">Let&apos;s Connect</h3>
-        <p>For collaboration on a project or chat, click <a href="https://saeedreza.com/cal" className="text-blue-600 hover:underline">here</a> to schedule a meeting.</p>
+        <p>For collaboration on a project or chat, click <a href="https://cal.saeedreza.com/" className="text-blue-600 hover:underline">here</a> to schedule a meeting.</p>
         <p>You can also find me on <a href="https://www.linkedin.com/in/saeedreza/" className="text-blue-600 hover:underline">LinkedIn</a> and <a href="https://x.com/IAmSaeedreza" className="text-blue-600 hover:underline">X</a>.</p>
       </section>
     </div>
