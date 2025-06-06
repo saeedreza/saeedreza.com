@@ -11,9 +11,9 @@ export default function Home() {
         <h3 className="font-semibold mb-4">Personal Life</h3>
         <ul className="custom-list space-y-2">
           <li>I live in Los Angeles  and our two cats.</li>
-          <li>I moved to the US from Iran in 2009 for graduate school. I received my master&apos;s degree in chemical engineering from the University of South Carolina in 2011.</li>
-          <li>I played poker for living for a couple of years after graduation and consider myself a competitive Risk player.</li>
-          <li>I&apos;m fascinated by the latest discoveries in science and technology and understanding the nature and depth of human consciousness.</li>
+          <li>I moved to the US from Iran in 2009 and hold BS and MS degrees in Chemical Engineering.</li>
+          <li>I played poker for living for a couple of years after graduation.</li>
+          <li>I&apos;m fascinated by the latest discoveries in science and technology and the nature of human consciousness.</li>
         </ul>  
       </section>
     
