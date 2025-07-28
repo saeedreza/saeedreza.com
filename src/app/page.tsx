@@ -10,7 +10,7 @@ export default function Home() {
       <section className="mb-12">
         <h3 className="font-semibold mb-4">Personal Life</h3>
         <ul className="custom-list space-y-2">
-          <li>I live with my two cats in Los Angeles.</li>
+          <li>I am based in Los Angeles.</li>
           <li>I moved to the US from Iran in 2009 and hold BS and MS degrees in Chemical Engineering.</li>
           <li>I played poker for living for a couple of years after graduation.</li>
           <li>I&apos;m fascinated by the latest discoveries in science and technology and the nature of human consciousness.</li>
