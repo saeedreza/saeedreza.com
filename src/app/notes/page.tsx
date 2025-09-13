@@ -1,8 +1,14 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Notes - Saeedreza Abbaspour',
-  description: 'Long-form thoughts and writings',
+  title: 'Notes',
+  description: 'Long-form thoughts and writings on AI, product development, and technology trends by Saeedreza Abbaspour.',
+  keywords: ['blog', 'notes', 'AI', 'product development', 'technology', 'long-form writing', 'thoughts'],
+  openGraph: {
+    title: 'Notes - Saeedreza Abbaspour',
+    description: 'Long-form thoughts and writings on AI, product development, and technology trends.',
+    url: 'https://saeedreza.com/notes',
+  },
 };
 
 export default function NotesPage() {
