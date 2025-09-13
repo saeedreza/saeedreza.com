@@ -1,5 +1,5 @@
-import { Analytics } from "@vercel/analytics/react"
 import type { Metadata, Viewport } from "next";
+import LayoutWrapper from "./components/LayoutWrapper";
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -64,21 +64,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen bg-stone-50 text-stone-900 max-w-2xl mx-auto font-mono flex flex-col">
-          <header className="py-8 px-4 sm:px-6 lg:px-8">
-            <nav className="flex space-x-4">
-            </nav>
-          </header>
-
-          <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
-            {children}
-          </main>
-
-          <footer className="py-6 px-4 sm:px-6 lg:px-8 text-center text-sm text-stone-600">
-            © {new Date().getFullYear()} Saeedreza Abbaspour
-          </footer>
-          <Analytics />
-        </div>
+        <LayoutWrapper>
+          {children}
+        </LayoutWrapper>
       </body>
     </html>
   );
