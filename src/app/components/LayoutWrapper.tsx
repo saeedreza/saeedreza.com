@@ -7,7 +7,7 @@ import type { LayoutType } from '../../types/layout';
 // Define which pages should use custom layout
 const getLayoutType = (pathname: string): LayoutType => {
   // You can add more sophisticated logic here
-  const customPages = ['/link', '/ai-workflow'];
+  const customPages = ['/link', '/ai-workflow', '/notes'];
   return customPages.includes(pathname) ? 'custom' : 'basic';
 };
 

@@ -6,11 +6,11 @@ export default function Home() {
         
         <div className="mb-4">
           <p className="mb-4">
-            Hi, I’m Saeedreza (pronounced Sa-eed Re-za). I’m a software product designer and developer transitioning into AI engineering. Right now, I’m building <a href="https://workform.ai" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">workform.ai</a>, a project focused on AI agents and rethinking how teams collaborate and communicate in AI era.
+            Hi, I&apos;m Saeedreza (pronounced Sa-eed Re-za). I&apos;m a software product designer and developer transitioning into AI engineering. Right now, I&apos;m building <a href="https://workform.ai" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">Workform &#10138;</a>, a project focused on AI agents and rethinking how teams collaborate and communicate in AI era.
           </p>
           
           <p className="mb-4">
-            I also run <a href="https://refact.io" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">Refact</a>, a software development agency that builds scalable software products for tech and media companies.
+            I also run <a href="https://refact.io" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">Refact &#10138;</a>, a software development agency that builds scalable software products for tech and media companies.
           </p>
 
           <p className="mb-4">
@@ -19,12 +19,12 @@ export default function Home() {
         </div>
         
         <div className="mt-8">
-          <h2 className="font-semibold mb-4">Let's Connect</h2>
+          <h2 className="font-semibold mb-4">Let&apos;s Connect</h2>
           <p className="mb-4">
-            To hire me for a project, click <a href="/link" className="text-blue-600 hover:text-blue-800 underline">here</a> to schedule a meeting.
+            To hire me for a project, click <a href="https://cal.saeedreza.com" className="text-blue-600 hover:text-blue-800 underline">here &#10138;</a> to schedule a meeting.
           </p>
           <p className="mb-4">
-            You can also find me on <a href="https://linkedin.com/in/saeedreza" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">LinkedIn</a> and <a href="https://x.com/saeedreza" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">X</a>.
+            You can also find me on <a href="https://linkedin.com/in/saeedreza" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">LinkedIn &#10138;</a> and <a href="https://x.com/saeedreza" className="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener noreferrer">X &#10138;</a>.
           </p>
         </div>
       </section>
