@@ -8,12 +8,12 @@ const lato = Lato({
   weight: ["300", "400", "700"],
   variable: "--font-lato",
   display: "swap",
+  preload: true,
 });
 
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
 }
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Saeedreza Abbaspour"
   },
   description: "I help non-technical founders build the first version of their products at Refact. Currently building Workform, an AI project manager for software teams.",
-  keywords: ["Saeedreza Abbaspour", "Software Designer", "AI Engineer", "Product Development", "Workform", "Refact", "Startup", "Non-technical Founders"],
+  keywords: ["Saeedreza Abbaspour", "Software Designer", "AI Engineer", "Product Development", "Workform", "Refact", "Startup", "Non-technical Founders", "MVP development"],
   authors: [{ name: "Saeedreza Abbaspour", url: "https://saeedreza.com" }],
   creator: "Saeedreza Abbaspour",
   publisher: "Saeedreza Abbaspour",
