@@ -4,7 +4,7 @@ export default function Home() {
     "@type": "Person",
     "name": "Saeedreza Abbaspour",
     "url": "https://saeedreza.com",
-    "image": "https://saeedreza.com/img/saeedreza.jpg",
+    "image": "https://saeedreza.com/img/saeedreza.png",
     "jobTitle": "Software Designer & AI Engineer",
     "description": "Software product designer and AI engineering",
     "sameAs": [
@@ -21,7 +21,7 @@ export default function Home() {
       {
         "@type": "Organization", 
         "name": "Refact",
-        "url": "https://refact.io"
+        "url": "https://refact.co"
       }
     ],
     "hasCreated": [
@@ -29,7 +29,7 @@ export default function Home() {
         "@type": "SoftwareApplication",
         "name": "Workform",
         "url": "https://workform.ai",
-        "description": "AI-first team collaboration and communication platform"
+        "description": "AI project manager for software teams"
       },
       {
         "@type": "WebApplication",
@@ -53,87 +53,81 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
-      <div className="max-w-2xl mx-auto">
-        <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-2xl font-bold mb-6">Hello World!</h1>
-          
-          <section aria-labelledby="about-heading" className="mb-8">
-            <h2 id="about-heading" className="sr-only">About Me</h2>
-            <div className="mb-4">
+      <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+          <section aria-labelledby="about-heading" className="mb-12">
+            <h1 id="about-heading" className="sr-only">About Me</h1>
+            <div className="text-stone-700 text-lg leading-relaxed">
               <p className="mb-4">
-                Hi, I&apos;m Saeedreza (pronounced Sa-eed Re-za). I&apos;m a software product designer and developer transitioning into AI engineering. Currently, I&apos;m building <a 
-                  href="https://workform.ai" 
-                  className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  aria-label="Workform - AI agents and team collaboration platform (opens in new tab)"
-                >Workform &#10138;</a>, where I’m exploring AI agents and building an AI-first platform for team collaboration.
+                I was a non-technical founder who couldn&apos;t get anyone to build what I wanted. So I learned to build it myself.
               </p>
               
               <p className="mb-4">
-                I also run <a 
-                  href="https://refact.io" 
-                  className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
+                Fifteen years later, I run <a 
+                  href="https://refact.co" 
+                  className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Refact - Software development agency (opens in new tab)"
-                >Refact &#10138;</a>, a software development agency that builds scalable software products for tech and media companies.
+                >Refact</a>, where I help non-technical founders build the first version of their products. I also build my own—currently <a 
+                  href="https://workform.ai" 
+                  className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Workform - AI-powered team collaboration tool (opens in new tab)"
+                >Workform</a>, an AI project manager for software teams.
               </p>
               
+              <p>
+                I write about product development, building software, and what I&apos;m learning along the way.
+              </p>
             </div>
           </section>
 
           <section aria-labelledby="projects-heading" className="mt-12">
-            <h2 id="projects-heading" className="text-lg font-semibold">Projects</h2>
-            <p className=" text-gray-700">Software projects, experiments, and products. <a 
-                    href="/projects"
-                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                    aria-label="View all projects"
-                  >
-                  See projects
-                  </a>
-                  </p>
+            <h2 id="projects-heading" className="sr-only">Projects</h2>
+            <p className="text-stone-700 text-lg">
+              <a href="/projects" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors" aria-label="View all projects">
+                Projects
+              </a> — Things I&apos;ve built
+            </p>
           </section>
           
-          <section aria-labelledby="notes-heading" className="mt-12">
-            <h2 id="notes-heading" className="text-lg font-semibold">Notes</h2>
-            <p className=" text-gray-700">Thoughts and writings on AI, product development, and technology trends. <a 
-                    href="/notes"
-                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                    aria-label="View all notes"
-                  >
-                  Read notes
-                  </a></p>
+          <section aria-labelledby="notes-heading" className="mt-4">
+            <h2 id="notes-heading" className="sr-only">Notes</h2>
+            <p className="text-stone-700 text-lg">
+              <a href="/notes" className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors" aria-label="View all notes">
+                Notes
+              </a> — Things I&apos;m thinking about
+            </p>
           </section>
 
-          <section aria-labelledby="connect-heading" className="mt-16">
-            <h2 id="connect-heading" className="text-lg font-semibold mb-4">Let&apos;s Connect</h2>
-            <p className="mb-4 text-sm">
-              To work with me, click <a 
+          <section aria-labelledby="connect-heading" className="mt-12">
+            <h2 id="connect-heading" className="text-xl font-bold text-stone-900 mb-4">Let&apos;s Connect</h2>
+            <p className="mb-3 text-stone-600">
+              To work with me, <a 
                 href="https://cal.saeedreza.com" 
-                className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors"
                 aria-label="Schedule a meeting with me (opens in new tab)"
                 target="_blank"
                 rel="noopener noreferrer"
-              >here &#10138;</a> to schedule a meeting.
+              >schedule a meeting</a>
             </p>
-            <p className="mb-4 text-sm">
-              You can also find me on <a 
+            <p className="text-stone-600">
+              Find me on <a 
                 href="https://linkedin.com/in/saeedreza" 
-                className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
+                className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Connect with me on LinkedIn (opens in new tab)"
-              >LinkedIn &#10138;</a> and <a 
+              >LinkedIn</a> and <a 
                 href="https://x.com/saeedreza" 
-                className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
+                className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Follow me on X (opens in new tab)"
-              >X &#10138;</a>.
+              >X</a>
             </p>
           </section>
-        </main>
       </div>
     </>
   );

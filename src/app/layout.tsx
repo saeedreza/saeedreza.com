@@ -1,6 +1,14 @@
 import type { Metadata, Viewport } from "next";
+import { Lato } from "next/font/google";
 import LayoutWrapper from "./components/LayoutWrapper";
 import "./globals.css";
+
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["300", "400", "700"],
+  variable: "--font-lato",
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -10,11 +18,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Saeedreza Abbaspour - Product Engineer & AI Developer",
+    default: "Saeedreza Abbaspour - Building software for non-technical founders",
     template: "%s | Saeedreza Abbaspour"
   },
-  description: "Software product designer and developer transitioning into AI engineering. Building Workform.ai and running Refact.io. Exploring the future of AI agents and team collaboration.",
-  keywords: ["Saeedreza Abbaspour", "Product Engineer", "AI Developer", "Software Designer", "Workform", "Refact", "AI Engineering", "Product Development"],
+  description: "I help non-technical founders build the first version of their products at Refact. Currently building Workform, an AI project manager for software teams.",
+  keywords: ["Saeedreza Abbaspour", "Software Designer", "AI Engineer", "Product Development", "Workform", "Refact", "Startup", "Non-technical Founders"],
   authors: [{ name: "Saeedreza Abbaspour", url: "https://saeedreza.com" }],
   creator: "Saeedreza Abbaspour",
   publisher: "Saeedreza Abbaspour",
@@ -38,14 +46,14 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://saeedreza.com',
     siteName: 'Saeedreza Abbaspour',
-    title: "Saeedreza Abbaspour - Product Engineer & AI Developer",
-    description: "Software product designer and developer transitioning into AI engineering. Building Workform.ai and running Refact.io.",
+    title: "Saeedreza Abbaspour - Building software for non-technical founders",
+    description: "I help non-technical founders build the first version of their products at Refact. Currently building Workform, an AI project manager for software teams.",
     images: [
       {
-        url: '/img/saeedreza.jpg',
+        url: '/img/saeedreza.png',
         width: 1200,
         height: 630,
-        alt: 'Saeedreza Abbaspour - Product Engineer & AI Developer',
+        alt: 'Saeedreza Abbaspour - Building software for non-technical founders',
       },
     ],
   },
@@ -53,9 +61,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@saeedreza',
     creator: '@saeedreza',
-    title: 'Saeedreza Abbaspour - Product Engineer & AI Developer',
-    description: 'Software product designer and developer transitioning into AI engineering. Building Workform.ai and running Refact.io.',
-    images: ['/img/saeedreza.jpg'],
+    title: 'Saeedreza Abbaspour - Software Designer & AI Engineer',
+    description: 'I help non-technical founders build the first version of their products at Refact. Currently building Workform, an AI project manager for software teams.',
+    images: ['/img/saeedreza.png'],
   },
   icons: {
     icon: [
@@ -77,9 +85,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  verification: {
-    google: 'your-google-verification-code', // Add your actual verification code
-  },
 };
 
 export default function RootLayout({
@@ -88,8 +93,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body suppressHydrationWarning={true}>
+    <html lang="en" className={lato.variable}>
+      <body className={lato.className} suppressHydrationWarning={true}>
         <LayoutWrapper>
           {children}
         </LayoutWrapper>

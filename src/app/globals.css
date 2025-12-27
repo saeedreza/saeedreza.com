@@ -4,21 +4,17 @@
 
 :root {
   --background: #fafaf9;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #1c1917;
+  --font-lato: 'Lato', sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-lato);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Accessibility improvements */
@@ -198,15 +194,17 @@ select:focus {
 
 /* Article prose styling - for single notes/articles */
 .prose-article {
-  line-height: 1.75;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #292524;
 }
 
 .prose-article p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .prose-article strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .prose-article em {
@@ -215,14 +213,25 @@ select:focus {
 
 .prose-article hr {
   border: none;
-  border-top: 1px solid #e5e7eb;
-  margin: 2.5rem 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #d6d3d1, transparent);
+  margin: 3rem 0;
 }
 
 .prose-article blockquote {
-  border-left: 3px solid #d1d5db;
-  padding-left: 1rem;
-  margin: 1.5rem 0;
+  border-left: 3px solid #a8a29e;
+  padding-left: 1.25rem;
+  margin: 2rem 0;
   font-style: italic;
-  color: #4b5563;
+  color: #57534e;
+}
+
+.prose-article a {
+  color: #2563eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-article a:hover {
+  color: #1d4ed8;
 }

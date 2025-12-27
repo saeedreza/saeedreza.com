@@ -58,9 +58,10 @@ function extractMetadataFromFile(filePath: string): { title?: string; descriptio
     }
     
     // Try to extract description from metadata export
-    const descMatch = content.match(/description:\s*['"`]([^'"`]+)['"`]/);
+    // Handle strings with escaped quotes by matching the entire quoted string
+    const descMatch = content.match(/description:\s*'((?:[^'\\]|\\.)*)'/);
     if (descMatch) {
-      description = descMatch[1];
+      description = descMatch[1].replace(/\\'/g, "'").replace(/\\"/g, '"');
     } else {
       // Try to find description in JSX - look for subtitle patterns
       const pMatch = content.match(/<p[^>]*className="[^"]*text-xl[^"]*"[^>]*>([^<]+)<\/p>/);
@@ -135,48 +136,42 @@ export default function NotesPage() {
   const articles = getAllNotes();
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="mb-6">
-          <Link
-            href="/"
-            className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-sm"
-            aria-label="Go back to homepage"
-          >
-            ← Back to home
-          </Link>
-        </div>
-        
-        <section aria-labelledby="notes-heading" className="mb-8">
-          <h1 className="text-2xl font-bold mb-6">Notes</h1>
-          <p className="mb-4">
-            Long-form thoughts on building businesses, software startups, product development, and technology trends.
-          </p>
-        </section>
+    <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="mb-8">
+        <Link
+          href="/"
+          className="text-blue-600 hover:text-blue-800 text-sm transition-colors"
+          aria-label="Go back to homepage"
+        >
+          ← Back to home
+        </Link>
+      </div>
+      
+      <section aria-labelledby="notes-heading" className="mb-8">
+        <h1 className="text-3xl font-bold mb-4 text-stone-900">Notes</h1>
+      </section>
 
-        <section aria-labelledby="articles-list" className="mt-12">
-          <h2 id="articles-list" className="sr-only">All Notes</h2>
-          <div className="space-y-6">
-            {articles.map((article) => (
-              <article key={article.slug}>
-                <h3 className="mb-1">
-                  <Link 
-                    href={`/notes/${article.slug}`}
-                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                    aria-label={`Read ${article.title}`}
-                  >
-                    {article.title}
-                  </Link>
-                </h3>
-                {article.description && (
-                  <p className="text-gray-700">{article.description}</p>
-                )}
-                <p className="text-sm text-gray-500 mt-1">{article.date}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-      </main>
+      <section aria-labelledby="articles-list" className="mt-12">
+        <h2 id="articles-list" className="sr-only">All Notes</h2>
+        <div className="space-y-8">
+          {articles.map((article) => (
+            <article key={article.slug}>
+              <h3 className="text-xl font-semibold mb-1">
+                <Link 
+                  href={`/notes/${article.slug}`}
+                  className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors"
+                  aria-label={`Read ${article.title}`}
+                >
+                  {article.title}
+                </Link>
+              </h3>
+              {article.description && (
+                <p className="text-stone-600">{article.description}</p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

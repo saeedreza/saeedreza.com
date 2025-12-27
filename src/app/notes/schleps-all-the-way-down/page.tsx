@@ -3,42 +3,36 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Schleps All the Way Down',
-  description: 'The best startup ideas often look like schleps someone finally decided to fix. Here\'s how to train yourself to see what everyone else is blind to.',
+  description: 'The best startup ideas are disguised as "that\'s just how it is."',
   openGraph: {
     title: 'Schleps All the Way Down - Saeedreza Abbaspour',
-    description: 'The best startup ideas often look like schleps someone finally decided to fix.',
+    description: 'The best startup ideas are disguised as "that\'s just how it is."',
     url: 'https://saeedreza.com/notes/schleps-all-the-way-down',
   },
 };
 
 export default function SchlepsAllTheWayDownPage() {
   return (
-    <div className="max-w-2xl mx-auto">
-      <main className="flex-1 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
-          <Link
-            href="/notes"
-            className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 text-sm"
-            aria-label="Go back to notes"
-          >
-            ← Back to notes
-          </Link>
-        </div>
+    <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="mb-8">
+        <Link
+          href="/notes"
+          className="text-blue-600 hover:text-blue-800 text-sm transition-colors"
+          aria-label="Go back to notes"
+        >
+          ← Back to notes
+        </Link>
+      </div>
 
-        <article>
-          <header className="mb-10">
-            <h1 className="text-2xl font-bold mb-3 leading-tight">
-              Schleps All the Way Down
-            </h1>
-            <p className="text-gray-600 mb-4">
-              The best startup ideas often look like schleps someone finally decided to fix. Here&apos;s how to train yourself to see what everyone else is blind to.
-            </p>
-            <div className="flex items-center gap-3 text-sm text-gray-500">
-              <time dateTime="2025-12-26">December 26, 2025</time>
-              <span>·</span>
-              <span>8 min read</span>
-            </div>
-          </header>
+      <article>
+        <header className="mb-12">
+          <h1 className="text-3xl font-bold mb-4 leading-tight text-stone-900">
+            Schleps All the Way Down
+          </h1>
+          <p className="text-lg text-stone-600">
+            The best startup ideas are disguised as &ldquo;that&apos;s just how it is.&rdquo;
+          </p>
+        </header>
 
           <div className="prose-article">
             <p>
@@ -236,7 +230,6 @@ export default function SchlepsAllTheWayDownPage() {
             </p>
           </div>
         </article>
-      </main>
     </div>
   );
 }
