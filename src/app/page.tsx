@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -84,77 +86,32 @@ export default function Home() {
           </section>
 
           <section aria-labelledby="projects-heading" className="mt-12">
-            <h2 id="projects-heading" className="text-lg font-semibold mb-6">Projects</h2>
-            <div className="space-y-4">
-              <article className="">
-                <h3 className="font-medium mb-2">
-                  <a 
-                    href="https://timeslide.saeedreza.com" 
-                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Timeslide project (opens in new tab)"
+            <h2 id="projects-heading" className="text-lg font-semibold">Projects</h2>
+            <p className=" text-gray-700">Software projects, experiments, and products. <a 
+                    href="/projects"
+                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    aria-label="View all projects"
                   >
-                    Timeslide &#10138;
+                  See projects
                   </a>
-                </h3>
-                <p className="text-sm text-gray-700">NYTimes meets TikTok, an experimental concept exploring the future of news media websites.</p>
-              </article>
-              
-              <article className="">
-                <h3 className="font-medium mb-2">
-                  <a 
-                    href="https://workform.ai" 
-                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Workform project (opens in new tab)"
-                  >
-                    Workform &#10138;
-                  </a>
-                </h3>
-                <p className="text-sm text-gray-700">A quest to build an AI-first team collaboration and communication platform.</p>
-              </article>
-              
-              <article className="">
-                <h3 className="font-medium mb-2">
-                  <a 
-                    href="https://askauthor.com" 
-                    className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Visit Ask Author project (opens in new tab)"
-                  >
-                    Ask Author &#10138;
-                  </a>
-                </h3>
-                <p className="text-sm text-gray-700">Talk to your favorite authors.</p>
-              </article>
-            </div>
+                  </p>
           </section>
           
           <section aria-labelledby="notes-heading" className="mt-12">
-            <h2 id="notes-heading" className="text-lg font-semibold mb-6">Notes</h2>
-            <div className="space-y-4">
-              <article className="">
-                <h3 className="mb-2">
-                  <a 
-                    href="/notes/analyse-of-5221-n8n-workflows" 
+            <h2 id="notes-heading" className="text-lg font-semibold">Notes</h2>
+            <p className=" text-gray-700">Thoughts and writings on AI, product development, and technology trends. <a 
+                    href="/notes"
                     className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                    aria-label="Read analysis of n8n workflows"
+                    aria-label="View all notes"
                   >
-                    Analysis of 5221 n8n workflows
-                  </a>
-                </h3>
-                <p className="text-sm text-gray-700">A deep dive into the world of n8n workflows.</p>
-              </article>
-            </div>
+                  Read notes
+                  </a></p>
           </section>
 
           <section aria-labelledby="connect-heading" className="mt-16">
             <h2 id="connect-heading" className="text-lg font-semibold mb-4">Let&apos;s Connect</h2>
             <p className="mb-4 text-sm">
-              To hire me for a project, click <a 
+              To work with me, click <a 
                 href="https://cal.saeedreza.com" 
                 className="text-blue-600 hover:text-blue-800 underline focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 aria-label="Schedule a meeting with me (opens in new tab)"
