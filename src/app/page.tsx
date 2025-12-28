@@ -9,7 +9,7 @@ export default function Home() {
     "description": "Software product designer and AI engineering",
     "sameAs": [
       "https://linkedin.com/in/saeedreza",
-      "https://x.com/saeedreza",
+      "https://x.com/IAmSaeedreza",
       "https://github.com/saeedreza"
     ],
     "worksFor": [
@@ -120,7 +120,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="Connect with me on LinkedIn (opens in new tab)"
               >LinkedIn</a> and <a 
-                href="https://x.com/saeedreza" 
+                href="https://x.com/IAmSaeedreza" 
                 className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors" 
                 target="_blank" 
                 rel="noopener noreferrer"
