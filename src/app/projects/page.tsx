@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Simple projects registry - add new projects here
 const projects = [
   {
     name: 'Timeslide',
@@ -36,38 +35,37 @@ const projects = [
 
 export default function ProjectsPage() {
   return (
-    <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div className="mb-8">
+    <div className="max-w-prose-wide mx-auto py-16 md:py-20 px-6 sm:px-8">
+      <div className="mb-12">
         <Link
           href="/"
-          className="text-blue-600 hover:text-blue-800 text-sm transition-colors"
+          className="back-link"
           aria-label="Go back to homepage"
         >
-          ← Back to home
+          <span className="back-arrow">←</span>
+          <span>Back to home</span>
         </Link>
       </div>
       
-      <section aria-labelledby="projects-heading" className="mb-8">
-        <h1 className="text-3xl font-bold mb-4 text-stone-900">Projects</h1>
+      <section aria-labelledby="projects-heading" className="mb-12">
+        <h1 className="page-title">Projects</h1>
       </section>
 
-      <section aria-labelledby="projects-list" className="mt-12">
+      <section aria-labelledby="projects-list">
         <h2 id="projects-list" className="sr-only">All Projects</h2>
-        <div className="space-y-8">
+        <div className="space-y-10">
           {projects.map((project) => (
             <article key={project.name}>
-              <h3 className="text-xl font-semibold mb-1">
-                <a 
-                  href={project.url}
-                  className="text-blue-600 underline underline-offset-2 hover:text-blue-800 transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Visit ${project.name} project (opens in new tab)`}
-                >
-                  {project.name}
-                </a>
-              </h3>
-              <p className="text-stone-600">{project.description}</p>
+              <a 
+                href={project.url}
+                className="article-card"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Visit ${project.name} project (opens in new tab)`}
+              >
+                <h3>{project.name}</h3>
+                <p>{project.description}</p>
+              </a>
             </article>
           ))}
         </div>

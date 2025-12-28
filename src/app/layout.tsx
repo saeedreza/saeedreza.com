@@ -1,14 +1,21 @@
 import type { Metadata, Viewport } from "next";
-import { Lato } from "next/font/google";
+import { Instrument_Sans, Instrument_Serif } from "next/font/google";
 import LayoutWrapper from "./components/LayoutWrapper";
 import "./globals.css";
 
-const lato = Lato({
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
-  variable: "--font-lato",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
   display: "swap",
-  preload: true,
+});
+
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
 });
 
 export const viewport: Viewport = {
@@ -93,8 +100,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={lato.variable}>
-      <body className={lato.className} suppressHydrationWarning={true}>
+    <html lang="en" className={`${instrumentSans.variable} ${instrumentSerif.variable}`}>
+      <body className={instrumentSans.className} suppressHydrationWarning={true}>
         <LayoutWrapper>
           {children}
         </LayoutWrapper>

@@ -13,23 +13,24 @@ export const metadata: Metadata = {
 
 export default function TheRealThreatToYourStartupPage() {
   return (
-    <div className="max-w-2xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div className="mb-8">
+    <div className="max-w-prose-wide mx-auto py-16 md:py-20 px-6 sm:px-8">
+      <div className="mb-12">
         <Link
           href="/notes"
-          className="text-blue-600 hover:text-blue-800 text-sm transition-colors"
+          className="back-link"
           aria-label="Go back to notes"
         >
-          ← Back to notes
+          <span className="back-arrow">←</span>
+          <span>Back to notes</span>
         </Link>
       </div>
 
       <article>
         <header className="mb-12">
-          <h1 className="text-3xl font-bold mb-4 leading-tight text-stone-900">
+          <h1 className="page-title mb-4">
             The Real Threat to Your Startup
           </h1>
-          <p className="text-lg text-stone-600">
+          <p className="lead">
             The hardest part of building is not building.
           </p>
         </header>
@@ -87,4 +88,3 @@ export default function TheRealThreatToYourStartupPage() {
     </div>
   );
 }
-
