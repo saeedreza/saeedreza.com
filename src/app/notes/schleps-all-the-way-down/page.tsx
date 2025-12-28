@@ -44,7 +44,7 @@ export default function SchlepsAllTheWayDownPage() {
             </p>
 
             <p>
-              A schlep is anything annoying you have to do to get what you actually want. The word comes from Yiddish, and it has exactly the right connotation—something tedious, effortful, slightly undignified. Carrying heavy bags. Waiting in line. Filling out forms.
+              A schlep is anything annoying you have to do to get what you actually want. The word comes from Yiddish, and it has exactly the right connotation,something tedious, effortful, slightly undignified. Carrying heavy bags. Waiting in line. Filling out forms.
             </p>
 
             <p>
@@ -124,7 +124,7 @@ export default function SchlepsAllTheWayDownPage() {
             </p>
 
             <p>
-              <strong>3. They&apos;re newly fixable.</strong> This is the one most people miss. The best schleps to target are the ones that just became solvable—because of new technology, new regulations, or new behaviors. If a schlep has existed forever and no one&apos;s fixed it, ask why. There might be a good reason.
+              <strong>3. They&apos;re newly fixable.</strong> This is the one most people miss. The best schleps to target are the ones that just became solvable,because of new technology, new regulations, or new behaviors. If a schlep has existed forever and no one&apos;s fixed it, ask why. There might be a good reason.
             </p>
 
             <hr />
@@ -142,7 +142,7 @@ export default function SchlepsAllTheWayDownPage() {
             </p>
 
             <p>
-              But if something did change—and recently—you might be looking at a real opportunity. The schlep existed for years, but the solution only became possible last Tuesday. That&apos;s the sweet spot.
+              But if something did change,and recently,you might be looking at a real opportunity. The schlep existed for years, but the solution only became possible last Tuesday. That&apos;s the sweet spot.
             </p>
 
             <hr />
@@ -196,7 +196,7 @@ export default function SchlepsAllTheWayDownPage() {
             <hr />
 
             <p>
-              One exercise that might help: at the end of each day, write down three schleps you encountered. Not startup ideas—just schleps. Things that were annoying or inefficient or harder than they needed to be.
+              One exercise that might help: at the end of each day, write down three schleps you encountered. Not startup ideas,just schleps. Things that were annoying or inefficient or harder than they needed to be.
             </p>
 
             <p>
@@ -218,7 +218,7 @@ export default function SchlepsAllTheWayDownPage() {
             </p>
 
             <p>
-              But those are exactly the ones worth questioning. The schleps that everyone tolerates because &ldquo;that&apos;s just how it is&rdquo;—those are the ones hiding the biggest opportunities.
+              But those are exactly the ones worth questioning. The schleps that everyone tolerates because &ldquo;that&apos;s just how it is&rdquo;,those are the ones hiding the biggest opportunities.
             </p>
 
             <p>

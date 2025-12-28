@@ -36,7 +36,7 @@ export default function WhatSeniorityActuallyIsPage() {
 
           <div className="prose-article">
             <p>
-              The word &ldquo;senior&rdquo; is misleading. It implies that seniority is about time—that you become senior by lasting long enough. But that&apos;s not quite right. Plenty of people work for twenty years and never become senior in any meaningful sense. And occasionally you meet someone who&apos;s senior after three.
+              The word &ldquo;senior&rdquo; is misleading. It implies that seniority is about time, that you become senior by lasting long enough. But that&apos;s not quite right. Plenty of people work for twenty years and never become senior in any meaningful sense. And occasionally you meet someone who&apos;s senior after three.
             </p>
 
             <p>
@@ -52,7 +52,7 @@ export default function WhatSeniorityActuallyIsPage() {
             </p>
 
             <p>
-              A senior engineer pays attention to something upstream: Is this the right problem? They&apos;ve learned, usually through painful experience, that correct solutions to incorrect problems are worthless. Worse than worthless—they&apos;re expensive. They consume time and resources and create the illusion of progress.
+              A senior engineer pays attention to something upstream: Is this the right problem? They&apos;ve learned, usually through painful experience, that correct solutions to incorrect problems are worthless. Worse than worthless, they&apos;re expensive. They consume time and resources and create the illusion of progress.
             </p>
 
             <p>
@@ -60,7 +60,7 @@ export default function WhatSeniorityActuallyIsPage() {
             </p>
 
             <p>
-              Why does this happen? Because problem selection is hard to see. Code is tangible. You can review it, test it, measure it. But whether you&apos;re solving the right problem—that&apos;s fuzzy. It requires thinking about users, about the market, about what might change. Junior people avoid this fuzziness. They retreat to what&apos;s measurable.
+              Why does this happen? Because problem selection is hard to see. Code is tangible. You can review it, test it, measure it. But whether you&apos;re solving the right problem, that&apos;s fuzzy. It requires thinking about users, about the market, about what might change. Junior people avoid this fuzziness. They retreat to what&apos;s measurable.
             </p>
 
             <p>
@@ -170,7 +170,7 @@ export default function WhatSeniorityActuallyIsPage() {
             </p>
 
             <p>
-              But ultimately there&apos;s no shortcut. Seniority is what you&apos;re left with after you&apos;ve made enough mistakes. The only way to accelerate it is to make mistakes faster—which, in practice, means taking on harder problems sooner than feels comfortable.
+              But ultimately there&apos;s no shortcut. Seniority is what you&apos;re left with after you&apos;ve made enough mistakes. The only way to accelerate it is to make mistakes faster, which, in practice, means taking on harder problems sooner than feels comfortable.
             </p>
 
             <p>
