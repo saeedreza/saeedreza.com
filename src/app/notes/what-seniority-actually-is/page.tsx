@@ -16,12 +16,12 @@ export default function WhatSeniorityActuallyIsPage() {
     <div className="max-w-prose-wide mx-auto py-16 md:py-20 px-6 sm:px-8">
       <div className="mb-12">
         <Link
-          href="/notes"
+          href="/"
           className="back-link"
-          aria-label="Go back to notes"
+          aria-label="Go back home"
         >
           <span className="back-arrow">←</span>
-          <span>Back to notes</span>
+          <span>Back</span>
         </Link>
       </div>
 
