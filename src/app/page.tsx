@@ -201,6 +201,21 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Notes */}
+        <section aria-labelledby="notes-heading" className="mt-12 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
+          <h2 id="notes-heading" className="section-title mb-6">Notes</h2>
+          <div className="space-y-3 text-base">
+            {notes.map((note) => (
+              <p key={note.slug} className="text-muted">
+                <Link 
+                  href={`/notes/${note.slug}`}
+                  aria-label={`Read ${note.title}`}
+                >{note.title}</Link>
+              </p>
+            ))}
+          </div>
+        </section>
+
         {/* Projects */}
         <section aria-labelledby="projects-heading" className="pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
           <h2 id="projects-heading" className="section-title mb-6">Projects</h2>
@@ -214,21 +229,6 @@ export default function Home() {
                   aria-label={`Visit ${project.name} (opens in new tab)`}
                 >{project.name}</a>
                 {' '}— {project.description}
-              </p>
-            ))}
-          </div>
-        </section>
-
-        {/* Notes */}
-        <section aria-labelledby="notes-heading" className="mt-12 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
-          <h2 id="notes-heading" className="section-title mb-6">Notes</h2>
-          <div className="space-y-3 text-base">
-            {notes.map((note) => (
-              <p key={note.slug} className="text-muted">
-                <Link 
-                  href={`/notes/${note.slug}`}
-                  aria-label={`Read ${note.title}`}
-                >{note.title}</Link>
               </p>
             ))}
           </div>
