@@ -188,6 +188,16 @@ export default function Home() {
                 aria-label="Refact - Software development agency (opens in new tab)"
               >Refact</a>, where I work with non-technical founders to build the first version of their product.
             </p>
+
+            <p className="mb-6">
+              I also build my own products. Currently:{' '}
+              <a 
+                href="https://workform.ai" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Workform - AI project manager (opens in new tab)"
+              >Workform</a>, an AI project manager for software teams.
+            </p>
           </div>
         </section>
 
