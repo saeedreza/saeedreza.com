@@ -176,27 +176,18 @@ export default function Home() {
           <h1 id="about-heading" className="sr-only">About Me</h1>
           <div className="text-base leading-relaxed" style={{ color: 'var(--foreground)' }}>
             <p className="mb-6">
-              Nobody would build what I wanted. So I learned to build it myself. Fifteen years and over 100 projects later, I speak both languages. I still remember what it felt like not to.
-            </p>
-            
-            <p className="mb-6">
-              I run{' '}
+              Hi, I am Saeedreza. I run{' '}
               <a 
                 href="https://refact.co" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Refact - Software development agency (opens in new tab)"
-              >Refact</a>, where I work with non-technical founders to build the first version of their product.
+              >Refact</a>{' '}
+              where I&apos;ve helped 100+ non-technical founders build the first version of their product. Most of them have worked with me for 2+ years.
             </p>
-
+            
             <p className="mb-6">
-              I also build my own products. Currently:{' '}
-              <a 
-                href="https://workform.ai" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Workform - AI project manager (opens in new tab)"
-              >Workform</a>, an AI project manager for software teams.
+              I write about building products and working with teams.
             </p>
           </div>
         </section>
@@ -217,7 +208,7 @@ export default function Home() {
         </section>
 
         {/* Projects */}
-        <section aria-labelledby="projects-heading" className="pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
+        <section aria-labelledby="projects-heading" className="mt-12 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
           <h2 id="projects-heading" className="section-title mb-6">Projects</h2>
           <div className="space-y-3 text-base">
             {projects.map((project) => (
