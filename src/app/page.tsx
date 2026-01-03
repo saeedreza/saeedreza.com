@@ -63,9 +63,14 @@ function extractMetadataFromFile(filePath: string): { title?: string; descriptio
       description = descMatch[1].replace(/\\'/g, "'").replace(/\\"/g, '"');
     }
     
-    const dateMatch = content.match(/dateTime="([^"]+)"/);
-    if (dateMatch) {
-      date = dateMatch[1];
+    const publishedDateMatch = content.match(/publishedDate\s*=\s*['"]([^'"]+)['"]/);
+    if (publishedDateMatch) {
+      date = publishedDateMatch[1];
+    } else {
+      const dateTimeMatch = content.match(/dateTime="([^"]+)"/);
+      if (dateTimeMatch) {
+        date = dateTimeMatch[1];
+      }
     }
     
     return { title, description, date };

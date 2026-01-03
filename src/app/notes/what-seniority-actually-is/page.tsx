@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+export const publishedDate = '2025-11-27';
+
 export const metadata: Metadata = {
   title: 'What Seniority Actually Is',
   description: 'Seniority is knowing what to ignore.',

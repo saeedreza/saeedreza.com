@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+export const publishedDate = '2025-12-14';
+
 export const metadata: Metadata = {
   title: 'The Laziest Answers',
   description: 'God and aliens have something in common: they\'re the laziest possible answers to the question of what\'s out there.',
@@ -45,7 +47,7 @@ export default function TheLaziestAnswersPage() {
           </p>
 
           <p>
-            Aliens do the same work. Don&apos;t understand how life began or Pyramids were built? It's Aliens who did it. You haven&apos;t answered the question. You&apos;ve just moved it to another planet. Now you have to explain how that life began. You&apos;ve added a step without gaining any ground.
+            Aliens do the same work. Don&apos;t understand how life began or how the Pyramids were built? Aliens did it. You haven&apos;t answered the question. You&apos;ve just moved it to another planet. Now you have to explain how that life began. You&apos;ve added a step without gaining any ground.
           </p>
 
           <p>
@@ -53,7 +55,7 @@ export default function TheLaziestAnswersPage() {
           </p>
 
           <p>
-            But here&apos;s the strange part: most people don&apos;t seem to notice this. Or if they notice, they don&apos;t mind. Which suggests the answers aren&apos;t really doing the work we think they&apos;re doing. They&apos;re not satisfying curiosity. They&apos;re satisfying something else.
+            But here&apos;s the strange part: this doesn&apos;t seem to bother people much. Which suggests the answers aren&apos;t really doing the work we think they&apos;re doing. They&apos;re not satisfying curiosity. They&apos;re satisfying something else.
           </p>
 
           <p>
@@ -63,7 +65,7 @@ export default function TheLaziestAnswersPage() {
           <hr />
 
           <p>
-            One of the strangest things about humans is how allergic we are to &ldquo;I don&apos;t know.&rdquo; If you ask someone what happens after death, they&apos;ll usually give you an answer. Not a shrug,an actual answer, delivered with the confidence of someone giving you directions to the airport. Same with questions about how the universe began, whether there&apos;s other intelligence out there, or what the purpose of existence is. These are some of the hardest questions imaginable, and yet almost everyone has ready answers.
+            One of the strangest things about humans is how allergic we are to &ldquo;I don&apos;t know.&rdquo; If you ask someone what happens after death, they&apos;ll often give you an answer. Not a shrug, an actual answer, delivered with the confidence of someone giving you directions to the airport. Same with questions about how the universe began, whether there&apos;s other intelligence out there, or what the purpose of existence is. These are some of the hardest questions imaginable, and yet answers come readily.
           </p>
 
           <p>
@@ -71,7 +73,7 @@ export default function TheLaziestAnswersPage() {
           </p>
 
           <p>
-            I think &ldquo;I don&apos;t know&rdquo; has a cost that most people find intolerable. It leaves a hole. And holes in our understanding of fundamental things feel dangerous, even if they&apos;re not. So we fill them. With gods, with aliens, with whatever conceptual furniture we have lying around. The quality of the answer matters less than having one.
+            I think &ldquo;I don&apos;t know&rdquo; has a cost that many people find intolerable. It leaves a hole. And holes in our understanding of fundamental things feel dangerous, even if they&apos;re not. So we fill them. With gods, with aliens, with whatever conceptual furniture we have lying around. The quality of the answer matters less than having one.
           </p>
 
           <p>
@@ -99,7 +101,7 @@ export default function TheLaziestAnswersPage() {
           </p>
 
           <p>
-            This isn&apos;t about being smarter. Some very intelligent people have strong religious beliefs. What seems to differ is what you might call fastidiousness about truth,a squeamishness about believing things without adequate evidence, the way some people are squeamish about eating food that might be slightly off. It&apos;s not a moral virtue. It&apos;s closer to a temperament.
+            This isn&apos;t about being smarter. Some very intelligent people have strong religious beliefs. What seems to differ is what you might call fastidiousness about truth, a squeamishness about believing things without adequate evidence, the way some people are squeamish about eating food that might be slightly off. It&apos;s not a moral virtue. It&apos;s closer to a temperament.
           </p>
 
           <p>
@@ -113,16 +115,6 @@ export default function TheLaziestAnswersPage() {
           </p>
 
           <p>
-            Here&apos;s one theory: for most of human history, uncertainty was dangerous. Not knowing whether that rustle in the grass was a predator could get you killed. We evolved to resolve ambiguity fast, even at the cost of accuracy. A false positive (assuming danger when there was none) was less costly than a false negative (assuming safety when there wasn&apos;t). So we&apos;re pattern-matchers by nature, seeing agency and intention everywhere, because the cost of seeing too much was lower than the cost of seeing too little.
-          </p>
-
-          <p>
-            That served us well on the savanna. It serves us less well when trying to understand the cosmos. The same instinct that made us see predators in shadows makes us see designers in complexity. It feels right. It just isn&apos;t.
-          </p>
-
-          <hr />
-
-          <p>
             The universe doesn&apos;t care what you believe. The sun will rise tomorrow regardless of your cosmology. Gravity will keep working whether you attribute it to God&apos;s will or curved spacetime. Your beliefs are entirely for you. They&apos;re a kind of internal decoration.
           </p>
 
@@ -134,8 +126,18 @@ export default function TheLaziestAnswersPage() {
             Most people don&apos;t do this. The discomfort is too great. But you could. And there&apos;s something to be said for it. An honest &ldquo;I don&apos;t know&rdquo; is the beginning of inquiry. A premature answer is the end of it.
           </p>
 
+          <hr />
+
           <p>
-            The laziest answers aren&apos;t lazy because they require no effort to believe. They&apos;re lazy because they let you stop thinking.
+            There&apos;s a social cost, though. People who refuse placeholder answers often get treated as cold, arrogant, or evasive. &ldquo;I don&apos;t know&rdquo; reads as withholding rather than honesty. You&apos;re not just tolerating internal discomfort, you&apos;re becoming a social outlier.
+          </p>
+
+          <p>
+            But here&apos;s the asymmetry that matters: people with placeholder answers stop looking. People who hold the question open occasionally stumble into real answers. The willingness to sit with uncertainty is a prerequisite for finding out. The people who eventually figure things out are usually the ones who could stand not knowing the longest.
+          </p>
+
+          <p>
+            One caution: if you make &ldquo;I don&apos;t know&rdquo; part of your identity, that can calcify too. The goal isn&apos;t to be the person who doesn&apos;t believe. It&apos;s to keep the question alive. The laziest answers aren&apos;t lazy because they require no effort to believe. They&apos;re lazy because they let you stop thinking. And stopping is the one thing you can&apos;t afford if you actually want to understand.
           </p>
         </div>
       </article>

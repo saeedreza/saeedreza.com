@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+export const publishedDate = '2025-11-12';
+
 export const metadata: Metadata = {
   title: 'The Real Threat to Your Startup',
   description: 'The hardest part of building is not building.',

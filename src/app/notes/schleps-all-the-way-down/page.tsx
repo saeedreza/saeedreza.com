@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+export const publishedDate = '2025-12-04';
+
 export const metadata: Metadata = {
   title: 'Schleps All the Way Down',
   description: 'The best startup ideas are disguised as "that\'s just how it is."',
@@ -45,7 +47,7 @@ export default function SchlepsAllTheWayDownPage() {
           </p>
 
           <p>
-            A schlep is anything annoying you have to do to get what you actually want. The word comes from Yiddish, and it has exactly the right connotation,something tedious, effortful, slightly undignified. Carrying heavy bags. Waiting in line. Filling out forms.
+            A schlep is anything annoying you have to do to get what you actually want. The word comes from Yiddish, and it has exactly the right connotation, something tedious, effortful, slightly undignified. Carrying heavy bags. Waiting in line. Filling out forms.
           </p>
 
           <p>
