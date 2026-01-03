@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 
-export const publishedDate = '2025-12-14';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const publishedDate = '2025-12-14';
 
 export const metadata: Metadata = {
   title: 'The Laziest Answers',
