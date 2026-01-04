@@ -99,8 +99,8 @@ export default function ArticleNav({ currentSlug }: ArticleNavProps) {
   
   return (
     <nav className="article-nav mt-16 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
-      <div className="flex flex-col sm:flex-row justify-between gap-6 sm:gap-8">
-        <div className="flex-1">
+      <div className="flex justify-between gap-4 sm:gap-8">
+        <div className="flex-1 min-w-0">
           {prevNote && (
             <Link 
               href={`/notes/${prevNote.slug}`}
@@ -122,7 +122,7 @@ export default function ArticleNav({ currentSlug }: ArticleNavProps) {
             </Link>
           )}
         </div>
-        <div className="flex-1 sm:text-right">
+        <div className="flex-1 min-w-0 text-right">
           {nextNote && (
             <Link 
               href={`/notes/${nextNote.slug}`}
