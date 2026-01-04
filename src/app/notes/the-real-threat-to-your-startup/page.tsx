@@ -71,11 +71,11 @@ export default function TheRealThreatToYourStartupPage() {
           </p>
 
           <p>
-            The startups that struggle aren&apos;t the ones who can&apos;t code. They&apos;re the ones who can&apos;t stop coding. They keep adding features the way some people keep adding adjectives—compulsively, defensively, as if more might somehow equal better.
+            The startups that struggle aren&apos;t the ones who can&apos;t code. They&apos;re the ones who can&apos;t stop coding. They keep adding features the way some people keep adding adjectives, compulsively, defensively, as if more might somehow equal better.
           </p>
 
           <p>
-            The dangerous thing about feature creep is that it feels like progress. You&apos;re shipping code. Things are happening. But you&apos;re actually moving sideways while convincing yourself you&apos;re moving forward. Every feature you add before launch is a feature you&apos;re guessing users want. And most of those guesses will be wrong—not because founders are stupid, but because guessing what users want without users is like trying to hit a target blindfolded. You might get lucky. You probably won&apos;t.
+            The dangerous thing about feature creep is that it feels like progress. You&apos;re shipping code. Things are happening. But you&apos;re actually moving sideways while convincing yourself you&apos;re moving forward. Every feature you add before launch is a feature you&apos;re guessing users want. And most of those guesses will be wrong, not because founders are stupid, but because guessing what users want without users is like trying to hit a target blindfolded. You might get lucky. You probably won&apos;t.
           </p>
 
           <p>
@@ -83,17 +83,17 @@ export default function TheRealThreatToYourStartupPage() {
           </p>
 
           <p>
-            The best founders I&apos;ve watched have a trick. They don&apos;t say no to ideas—they say &ldquo;not yet.&rdquo; They keep a list of everything they want to build, and then they ruthlessly ignore it until after launch. The list isn&apos;t a plan. It&apos;s a release valve for the part of your brain that keeps generating ideas when it should be shipping.
+            The best founders I&apos;ve watched have a trick. They don&apos;t say no to ideas, they say &ldquo;not yet.&rdquo; They keep a list of everything they want to build, and then they ruthlessly ignore it until after launch. The list isn&apos;t a plan. It&apos;s a release valve for the part of your brain that keeps generating ideas when it should be shipping.
           </p>
 
           <p>
-            The real test for whether a feature belongs in v1 is simple: would the first ten users refuse to use your product without it? Not your target market—your actual first users. The ones you could call by name. If you&apos;re not sure who those people are, you have a bigger problem than scope creep.
+            The real test for whether a feature belongs in v1 is simple: would the first ten users refuse to use your product without it? Not your target market, your actual first users. The ones you could call by name. If you&apos;re not sure who those people are, you have a bigger problem than scope creep.
           </p>
 
           <hr />
 
           <p>
-            Try cutting your MVP in half, then cutting it in half again. It sounds extreme. But the companies that succeed often launch with something so minimal it embarrasses them. Dropbox launched with a video demo and a waitlist—no working product at all. The Collison brothers tested Stripe by offering to integrate it for startups on the spot, before the product was ready for self-service. They weren&apos;t building the complete solution. They were learning whether the problem was real.
+            Try cutting your MVP in half, then cutting it in half again. It sounds extreme. But the companies that succeed often launch with something so minimal it embarrasses them. Dropbox launched with a video demo and a waitlist, no working product at all. The Collison brothers tested Stripe by offering to integrate it for startups on the spot, before the product was ready for self-service. They weren&apos;t building the complete solution. They were learning whether the problem was real.
           </p>
 
           <p>
@@ -101,11 +101,11 @@ export default function TheRealThreatToYourStartupPage() {
           </p>
 
           <p>
-            But here&apos;s where I&apos;m less certain. This advice assumes your market tolerates roughness—that early adopters will forgive missing features if the core works. That&apos;s true for most software. It&apos;s less true when trust is table stakes. If you&apos;re building something that handles money, or health data, or security, &ldquo;move fast and break things&rdquo; can break trust in ways you can&apos;t repair. Stripe could test with startups who&apos;d tolerate bugs. A startup selling to banks probably can&apos;t.
+            But here&apos;s where I&apos;m less certain. This advice assumes your market tolerates roughness, that early adopters will forgive missing features if the core works. That&apos;s true for most software. It&apos;s less true when trust is table stakes. If you&apos;re building something that handles money, or health data, or security, &ldquo;move fast and break things&rdquo; can break trust in ways you can&apos;t repair. Stripe could test with startups who&apos;d tolerate bugs. A startup selling to banks probably can&apos;t.
           </p>
 
           <p>
-            There&apos;s also a failure mode on the other side. Some founders launch so early, with something so minimal, that they never learn whether the idea could work—only that the rough version didn&apos;t. If your MVP is a landing page and nobody signs up, you&apos;ve learned something. But you haven&apos;t learned whether a real product would have worked. The signal is noisy.
+            There&apos;s also a failure mode on the other side. Some founders launch so early, with something so minimal, that they never learn whether the idea could work, only that the rough version didn&apos;t. If your MVP is a landing page and nobody signs up, you&apos;ve learned something. But you haven&apos;t learned whether a real product would have worked. The signal is noisy.
           </p>
 
           <p>
@@ -123,7 +123,7 @@ export default function TheRealThreatToYourStartupPage() {
           </p>
 
           <p>
-            But it&apos;s worth being honest: launching is also when you discover whether you built the right minimum. Sometimes you learn you cut too deep. The skill isn&apos;t just cutting—it&apos;s knowing where to stop.
+            But it&apos;s worth being honest: launching is also when you discover whether you built the right minimum. Sometimes you learn you cut too deep. The skill isn&apos;t just cutting, it&apos;s knowing where to stop.
           </p>
         </div>
 
