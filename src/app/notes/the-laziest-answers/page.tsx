@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import ArticleNav from '../../components/ArticleNav';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const publishedDate = '2025-12-14';
@@ -11,6 +13,20 @@ export const metadata: Metadata = {
     title: 'The Laziest Answers - Saeedreza Abbaspour',
     description: 'God and aliens have something in common: they\'re the laziest possible answers to the question of what\'s out there.',
     url: 'https://saeedreza.com/notes/the-laziest-answers',
+    images: [
+      {
+        url: '/img/the-laziest-answers-cover.png',
+        width: 1456,
+        height: 816,
+        alt: 'The Laziest Answers',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Laziest Answers - Saeedreza Abbaspour',
+    description: 'God and aliens have something in common: they\'re the laziest possible answers to the question of what\'s out there.',
+    images: ['/img/the-laziest-answers-cover.png'],
   },
 };
 
@@ -29,6 +45,17 @@ export default function TheLaziestAnswersPage() {
       </div>
 
       <article>
+        <figure className="mb-10 -mx-6 sm:-mx-8 md:mx-0">
+          <Image
+            src="/img/the-laziest-answers-cover.png"
+            alt=""
+            width={1456}
+            height={816}
+            className="w-full h-auto"
+            priority
+          />
+        </figure>
+
         <header className="mb-12">
           <h1 className="page-title mb-4">
             The Laziest Answers
@@ -141,6 +168,8 @@ export default function TheLaziestAnswersPage() {
             One caution: if you make &ldquo;I don&apos;t know&rdquo; part of your identity, that can calcify too. The goal isn&apos;t to be the person who doesn&apos;t believe. It&apos;s to keep the question alive. The laziest answers aren&apos;t lazy because they require no effort to believe. They&apos;re lazy because they let you stop thinking. And stopping is the one thing you can&apos;t afford if you actually want to understand.
           </p>
         </div>
+
+        <ArticleNav currentSlug="the-laziest-answers" />
       </article>
     </div>
   );

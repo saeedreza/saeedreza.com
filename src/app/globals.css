@@ -3,13 +3,12 @@
 @tailwind utilities;
 
 :root {
-  /* Cooler Precision palette */
-  --background: #fafbfc;
-  --foreground: #111827;
-  --text-muted: #4b5563;
-  --text-subtle: #6b7280;
-  --accent: #4f6d7a;
-  --accent-hover: #3d5663;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --text-muted: #4a4a4a;
+  --text-subtle: #666666;
+  --accent: #2b4a8c;
+  --accent-hover: #1e3a6e;
   --border: #e5e7eb;
   
   /* Typography - uses CSS variables from Next.js font optimization */
@@ -252,4 +251,31 @@ select:focus-visible {
   font-size: var(--font-size-base);
   color: var(--text-muted);
   line-height: 1.5;
+}
+
+/* Note item with thumbnail */
+.note-item {
+  background-image: none;
+}
+
+.note-thumbnail {
+  border-radius: 2px;
+}
+
+/* Article navigation */
+.article-nav-link {
+  background-image: none;
+}
+
+.article-nav-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: var(--text-subtle);
+  margin-bottom: 0.25rem;
+}
+
+.article-nav-title {
+  display: block;
+  color: var(--foreground);
+  transition: color 0.15s ease;
 }

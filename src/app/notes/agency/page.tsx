@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import ArticleNav from '../../components/ArticleNav';
 
 export const metadata: Metadata = {
   title: 'Agency',
@@ -8,6 +10,20 @@ export const metadata: Metadata = {
     title: 'Agency - Saeedreza Abbaspour',
     description: 'Jeff Bezos\'s regret minimization framework sounds wise until you think about it for five minutes.',
     url: 'https://saeedreza.com/notes/agency',
+    images: [
+      {
+        url: '/img/agency-cover.png',
+        width: 1456,
+        height: 816,
+        alt: 'Agency - A hand-drawn sketch of a ship\'s wheel emerging from water',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Agency - Saeedreza Abbaspour',
+    description: 'Jeff Bezos\'s regret minimization framework sounds wise until you think about it for five minutes.',
+    images: ['/img/agency-cover.png'],
   },
 };
 
@@ -26,6 +42,17 @@ export default function AgencyPage() {
       </div>
 
       <article>
+        <figure className="mb-10 -mx-6 sm:-mx-8 md:mx-0">
+          <Image
+            src="/img/agency-cover.png"
+            alt="A hand-drawn sketch of a ship's wheel emerging from water"
+            width={1456}
+            height={816}
+            className="w-full h-auto"
+            priority
+          />
+        </figure>
+
         <header className="mb-12">
           <h1 className="page-title mb-4">
             Agency
@@ -108,6 +135,8 @@ export default function AgencyPage() {
             Wouldn&apos;t it be a waste to reach the end of your life and realize you never really tasted it? Not because you chose wrong, but because you spent the whole time calculating instead of choosing, optimizing for a future feeling instead of living the present one. The strawberries were always there. You just never reached for them.
           </p>
         </div>
+
+        <ArticleNav currentSlug="agency" />
       </article>
     </div>
   );

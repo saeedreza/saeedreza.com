@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import ArticleNav from '../../components/ArticleNav';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const publishedDate = '2025-11-27';
@@ -11,6 +13,20 @@ export const metadata: Metadata = {
     title: 'What Seniority Actually Is - Saeedreza Abbaspour',
     description: 'Seniority is knowing what to ignore.',
     url: 'https://saeedreza.com/notes/what-seniority-actually-is',
+    images: [
+      {
+        url: '/img/what-seniority-actually-is-cover.png',
+        width: 1456,
+        height: 816,
+        alt: 'What Seniority Actually Is',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'What Seniority Actually Is - Saeedreza Abbaspour',
+    description: 'Seniority is knowing what to ignore.',
+    images: ['/img/what-seniority-actually-is-cover.png'],
   },
 };
 
@@ -29,6 +45,17 @@ export default function WhatSeniorityActuallyIsPage() {
       </div>
 
       <article>
+        <figure className="mb-10 -mx-6 sm:-mx-8 md:mx-0">
+          <Image
+            src="/img/what-seniority-actually-is-cover.png"
+            alt=""
+            width={1456}
+            height={816}
+            className="w-full h-auto"
+            priority
+          />
+        </figure>
+
         <header className="mb-12">
           <h1 className="page-title mb-4">
             What Seniority Actually Is
@@ -181,6 +208,8 @@ export default function WhatSeniorityActuallyIsPage() {
             That&apos;s scary. But the alternative is getting old without getting senior. And that&apos;s worse.
           </p>
         </div>
+
+        <ArticleNav currentSlug="what-seniority-actually-is" />
       </article>
     </div>
   );

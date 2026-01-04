@@ -1,18 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Sans, Instrument_Serif } from "next/font/google";
+import { Lora, Source_Serif_4 } from "next/font/google";
 import LayoutWrapper from "./components/LayoutWrapper";
 import "./globals.css";
 
-const instrumentSans = Instrument_Sans({
+const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
   variable: "--font-sans",
   display: "swap",
 });
 
-const instrumentSerif = Instrument_Serif({
+const lora = Lora({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   variable: "--font-serif",
   display: "swap",
@@ -100,8 +101,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${instrumentSans.variable} ${instrumentSerif.variable}`}>
-      <body className={instrumentSans.className} suppressHydrationWarning={true}>
+    <html lang="en" className={`${sourceSerif.variable} ${lora.variable}`}>
+      <body className={sourceSerif.className} suppressHydrationWarning={true}>
         <LayoutWrapper>
           {children}
         </LayoutWrapper>

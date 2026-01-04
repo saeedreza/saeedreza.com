@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import fs from 'fs';
 import path from 'path';
 
@@ -25,15 +26,17 @@ interface NoteMetadata {
   title: string;
   description: string;
   date: string;
+  coverImage?: string;
 }
 
-function extractMetadataFromFile(filePath: string): { title?: string; description?: string; date?: string } {
+function extractMetadataFromFile(filePath: string, slug: string): { title?: string; description?: string; date?: string; coverImage?: string } {
   try {
     const content = fs.readFileSync(filePath, 'utf-8');
     
     let title = '';
     let description = '';
     let date = '';
+    let coverImage: string | undefined;
     
     const metadataMatch = content.match(/title:\s*['"`]([^'"`]+)['"`]/);
     if (metadataMatch) {
@@ -73,7 +76,13 @@ function extractMetadataFromFile(filePath: string): { title?: string; descriptio
       }
     }
     
-    return { title, description, date };
+    // Check for cover image
+    const coverPath = path.join(process.cwd(), 'public', 'img', `${slug}-cover.png`);
+    if (fs.existsSync(coverPath)) {
+      coverImage = `/img/${slug}-cover.png`;
+    }
+    
+    return { title, description, date, coverImage };
   } catch (error) {
     console.error(`Error reading file ${filePath}:`, error);
     return {};
@@ -93,7 +102,7 @@ function getAllNotes(): NoteMetadata[] {
         const pagePath = path.join(notesDir, slug, 'page.tsx');
         
         if (fs.existsSync(pagePath)) {
-          const { title, description, date: extractedDate } = extractMetadataFromFile(pagePath);
+          const { title, description, date: extractedDate, coverImage } = extractMetadataFromFile(pagePath, slug);
           
           let date = extractedDate;
           if (!date) {
@@ -105,7 +114,8 @@ function getAllNotes(): NoteMetadata[] {
             slug,
             title: title || slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
             description: description || '',
-            date
+            date,
+            coverImage
           });
         }
       }
@@ -200,14 +210,27 @@ export default function Home() {
         {/* Notes */}
         <section aria-labelledby="notes-heading" className="mt-12 pt-10 border-t" style={{ borderColor: 'var(--border)' }}>
           <h2 id="notes-heading" className="section-title mb-6">Notes</h2>
-          <div className="space-y-3 text-base">
+          <div className="space-y-4 text-base">
             {notes.map((note) => (
-              <p key={note.slug} className="text-muted">
-                <Link 
-                  href={`/notes/${note.slug}`}
-                  aria-label={`Read ${note.title}`}
-                >{note.title}</Link>
-              </p>
+              <Link 
+                key={note.slug}
+                href={`/notes/${note.slug}`}
+                aria-label={`Read ${note.title}`}
+                className="note-item group flex items-center gap-4"
+              >
+                {note.coverImage && (
+                  <div className="note-thumbnail flex-shrink-0 w-16 h-10 overflow-hidden">
+                    <Image
+                      src={note.coverImage}
+                      alt=""
+                      width={64}
+                      height={40}
+                      className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                )}
+                <span className="text-muted group-hover:text-[var(--accent)] transition-colors">{note.title}</span>
+              </Link>
             ))}
           </div>
         </section>

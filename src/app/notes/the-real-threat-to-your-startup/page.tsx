@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import ArticleNav from '../../components/ArticleNav';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const publishedDate = '2025-11-12';
@@ -11,6 +13,20 @@ export const metadata: Metadata = {
     title: 'The Real Threat to Your Startup - Saeedreza Abbaspour',
     description: 'The hardest part of building is not building.',
     url: 'https://saeedreza.com/notes/the-real-threat-to-your-startup',
+    images: [
+      {
+        url: '/img/the-real-threat-to-your-startup-cover.png',
+        width: 1456,
+        height: 816,
+        alt: 'The Real Threat to Your Startup',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Real Threat to Your Startup - Saeedreza Abbaspour',
+    description: 'The hardest part of building is not building.',
+    images: ['/img/the-real-threat-to-your-startup-cover.png'],
   },
 };
 
@@ -29,6 +45,17 @@ export default function TheRealThreatToYourStartupPage() {
       </div>
 
       <article>
+        <figure className="mb-10 -mx-6 sm:-mx-8 md:mx-0">
+          <Image
+            src="/img/the-real-threat-to-your-startup-cover.png"
+            alt=""
+            width={1456}
+            height={816}
+            className="w-full h-auto"
+            priority
+          />
+        </figure>
+
         <header className="mb-12">
           <h1 className="page-title mb-4">
             The Real Threat to Your Startup
@@ -87,6 +114,8 @@ export default function TheRealThreatToYourStartupPage() {
             The best thing about launching early is that it ends the debate. You stop arguing about what users might want and start learning what they actually want. That conversation doesn&apos;t begin until you ship. Every day you spend adding features is another day you spend talking to yourself.
           </p>
         </div>
+
+        <ArticleNav currentSlug="the-real-threat-to-your-startup" />
       </article>
     </div>
   );

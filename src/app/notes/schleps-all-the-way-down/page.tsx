@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
+import ArticleNav from '../../components/ArticleNav';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const publishedDate = '2025-12-04';
@@ -11,6 +13,20 @@ export const metadata: Metadata = {
     title: 'Schleps All the Way Down - Saeedreza Abbaspour',
     description: 'The best startup ideas are disguised as "that\'s just how it is."',
     url: 'https://saeedreza.com/notes/schleps-all-the-way-down',
+    images: [
+      {
+        url: '/img/schleps-all-the-way-down-cover.png',
+        width: 1456,
+        height: 816,
+        alt: 'Schleps All the Way Down',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Schleps All the Way Down - Saeedreza Abbaspour',
+    description: 'The best startup ideas are disguised as "that\'s just how it is."',
+    images: ['/img/schleps-all-the-way-down-cover.png'],
   },
 };
 
@@ -29,6 +45,17 @@ export default function SchlepsAllTheWayDownPage() {
       </div>
 
       <article>
+        <figure className="mb-10 -mx-6 sm:-mx-8 md:mx-0">
+          <Image
+            src="/img/schleps-all-the-way-down-cover.png"
+            alt=""
+            width={1456}
+            height={816}
+            className="w-full h-auto"
+            priority
+          />
+        </figure>
+
         <header className="mb-12">
           <h1 className="page-title mb-4">
             Schleps All the Way Down
@@ -233,6 +260,8 @@ export default function SchlepsAllTheWayDownPage() {
             Usually, it&apos;s inertia. And inertia is a schlep waiting to be fixed.
           </p>
         </div>
+
+        <ArticleNav currentSlug="schleps-all-the-way-down" />
       </article>
     </div>
   );
