@@ -87,7 +87,7 @@ export default function WhatSeniorityActuallyIsPage() {
           </p>
 
           <p>
-            This seems obvious when stated plainly. And yet the mistake is incredibly common. I&apos;ve seen it dozens of times at YC. A team will work for months on something, get it working beautifully, and only then discover that nobody wants it. The code was fine. The problem selection was wrong.
+            This seems obvious when stated plainly. And yet the mistake is incredibly common. I&apos;ve made it myself many times, building products, running startups, leading teams. You work for months on something, get it working beautifully, and only then discover that nobody wants it. Or you solve a problem elegantly, only to realize it wasn&apos;t the problem that mattered. The execution was fine. The problem selection was wrong.
           </p>
 
           <p>
