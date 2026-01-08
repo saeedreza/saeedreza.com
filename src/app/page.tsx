@@ -137,8 +137,8 @@ export default function Home() {
     "name": "Saeedreza Abbaspour",
     "url": "https://saeedreza.com",
     "image": "https://saeedreza.com/img/saeedreza.png",
-    "jobTitle": "Software Designer & AI Engineer",
-    "description": "Software product designer and AI engineering",
+    "jobTitle": "Product Designer & Software Developer",
+    "description": "I build software for non-technical founders and domain experts.",
     "sameAs": [
       "https://linkedin.com/in/saeedreza",
       "https://x.com/IAmSaeedreza",
@@ -191,18 +191,14 @@ export default function Home() {
           <h1 id="about-heading" className="sr-only">About Me</h1>
           <div className="text-base leading-relaxed" style={{ color: 'var(--foreground)' }}>
             <p className="mb-6">
-              Hi, I am Saeedreza. I run{' '}
+              Hi, I&apos;m Saeedreza. I&apos;ve spent a decade helping founders build products. I run{' '}
               <a 
                 href="https://refact.co" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="Refact - Software development agency (opens in new tab)"
               >Refact</a>{' '}
-              where I&apos;ve helped 100+ non-technical founders build the first version of their product. Most of them have worked with me for 2+ years.
-            </p>
-            
-            <p className="mb-6">
-              I write about building products and working with teams.
+              and sometimes write about human psychology, pattern recognition, and the gap between how things seem and how they work.
             </p>
           </div>
         </section>
